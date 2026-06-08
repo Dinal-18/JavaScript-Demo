@@ -9,6 +9,21 @@ const accountId = 123
     TypeError: Assignment to constant variable.
 */
 let accountEmail = "dinal@gmail.com"
+/*
+
+console.log(name)
+let name = "Dinal"
+ReferenceError: Cannot access 'name' before initialization
+
+let name = "Dinal"
+let name = "Pinal"
+console.log(name)
+
+let name = "Pinal"
+    ^
+SyntaxError: Identifier 'name' has already been declared
+
+*/
 var accountPassword = 212121
 accountCity = "Mumbai"
 let accountState; //value is undefined 
@@ -21,6 +36,9 @@ console.log(accountId);
 /*
     prefer not to use var
     because of issue in block scope and functional scope
+    console.log(name)   //output:undefined
+    var name = "Dinal"
+
 */
 console.table([accountId,accountEmail,accountPassword,accountCity,accountState])
 //must be written in []square braces.
